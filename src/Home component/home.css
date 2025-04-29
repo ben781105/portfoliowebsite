@@ -1,0 +1,312 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    width:100%;
+    min-height: 100vh;
+}
+.home{
+    width:100%;
+    min-height: 100vh;
+    display:flex;
+    flex-direction:column;
+    position: relative;
+    padding-top: 3rem;
+    gap:2rem;
+}
+
+.introduction{
+    display:flex;
+     position: relative;
+}
+.greetings{
+    display: flex;
+    flex-direction: column;
+  
+}
+.home h1{
+    font-size: 1.1rem;
+    font-family: Kanit,sans-serif;
+    font-weight: 250;
+    color:var(--color4);
+    text-align: center;
+    align-self: flex-start;
+}
+.greetings h2{
+    font-size: 3.5rem;
+    font-weight: 400;
+   z-index: 1222;
+   width:fit-content;
+   padding-top: 15px;
+   padding-right: 20px;
+   text-align: right;
+   font-family: Unbounded,sans-serif;
+   color:var(--color5);
+   background-color: var(--color2);
+}
+.greetings span{
+    font-size: 3.5rem;
+    font-weight: 400;
+    z-index: 9999;
+    width:72%;
+    text-align: right;
+    padding-right: 1.25rem;
+    font-family: Unbounded,sans-serif;
+    color:var(--color5);
+    background-color: var(--color2);
+}
+.greetings p{
+    width:40%;
+    text-align: left;
+    margin-top: 3rem;
+    font-family: Kanit,sans-serif;
+    font-weight: 300;
+    color:var(--color5);
+}
+.greetings button{
+    width:28%;
+    height:50px;
+    border-radius:2.5rem;
+    margin-top:3rem;
+    height: 3.3125rem;
+    font-size: 1.2rem;
+    background-color: var(--color4);
+    color: var(--color1);
+}
+.profile-img{
+    position: absolute;
+    right:-10.875rem;
+    top:2.125rem;
+    width:30.9375rem;
+    height: 25.4375rem;
+    border: none;
+    z-index: 1055;
+    background-color: var(--color2);
+}
+.profile-img img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-bottom-left-radius: 37%;
+    background-color: var(--color4);
+}
+.icon{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:0;
+    left: 0;
+    width:5.625rem;
+    z-index: 8000;
+    height:5.625rem;
+  background-color: var(--color4);
+    font-size: 3rem;
+   color:var(--color1);
+    font-family: Kanit,sans-serif;
+}
+
+
+@media(min-width:1370px){
+    .home{
+        padding-top: 8rem;
+       
+    }  
+    .profile-img{
+        position: absolute;
+        right:-10.875rem;
+        top:2.125rem;
+        width:30.9375rem;
+        height: 32.4375rem;
+        border: none;
+    }
+ 
+    .greetings h2{
+        font-size: 4rem;
+     
+    }
+    .greetings span{
+        font-size: 4rem;
+       
+    }
+    .home h1{
+        font-size: 1.2rem;
+    }
+}
+ 
+@media( min-width:1500px){
+    .profile-img{
+        position: absolute;
+        right:-10.875rem;
+        top:2.125rem;
+        width:30.9375rem;
+        height: 30.4375rem;
+        border: none;
+    }
+    .home{
+        padding-top: 8rem;
+    }
+    .home h1{
+        font-size: 1.3rem;
+    }
+    .greetings h2{
+        font-size: 4.5rem;
+    }
+    .greetings span{
+        font-size: 4.5rem;
+    }
+    .home h1{
+        font-size: 1.1rem;
+        font-family: Kanit,sans-serif;
+        font-weight: 250;
+        color:var(--color4);
+        text-align: center;
+        align-self: flex-start;
+
+    }
+    .greetings p{
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+}
+@media(max-width:1300px){
+    .home{
+        align-items: center;
+        justify-content: center;
+        gap:0;
+    }
+    .profile-img{
+        position: relative;
+        right:0;
+       top:0;
+        width:100%;
+        height:40rem;
+        border: none;
+        
+    }
+    .profile-img img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        background-color:#DCDEDD ;
+        border-bottom-left-radius: 0;
+    }
+    .introduction{
+        display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap:4.25rem;
+    }
+    .greetings{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+    }
+    .home h1{
+        font-size: 1.1rem;
+        font-family: Kanit,sans-serif;
+        font-weight: 250;
+        color:var(--color4);
+        text-align: center;
+        align-self: center;
+
+    }
+    .greetings h2{
+        font-size: 3.5rem;
+        font-weight: 400;
+        z-index:888;
+       width:fit-content;
+       padding-top: 15px;
+       padding-right: 20px;
+       text-align: center;
+       width:100%;
+       font-family: Unbounded,sans-serif;
+    }
+    .greetings span{
+        font-size: 3.5rem;
+        font-weight: 400;
+        z-index:888;
+        width:100%;
+       
+        text-align: center;
+        padding-right: 1.25rem;
+        font-family: Unbounded,sans-serif;
+    }
+    .greetings p{
+        width:100%;
+        text-align: center;
+        margin-top: 3rem;
+        font-family: Kanit,sans-serif;
+        font-weight: 300;
+    }
+    .greetings button{
+        width:40%;
+        height:50px;
+        border-radius:2.5rem;
+        margin-top:3rem;
+        height: 3.3125rem;
+        font-size: 1.2rem;
+        padding: 10px 10px;
+       
+    }
+}
+@media(max-width: 600px) {
+    .greetings{
+        min-height: 60vh;
+    }
+    .home{
+        padding-top: 8rem;
+    }
+    .greetings button{
+        width:55%;
+        height:50px;
+        border-radius:2.5rem;
+        margin-top:3rem;
+        height: 3.3125rem;
+        font-size: 1.2rem;
+        padding: 10px 13px;
+       
+    }   .home h1{
+        font-size: 1.1rem;
+        font-family: Kanit,sans-serif;
+        font-weight: 250;
+        color:var(--color4);
+        text-align: center;
+        align-self: center;
+     
+    }
+    .greetings h2{
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+    .greetings span{
+        font-size: 2.5rem;
+        font-weight: 400;
+        font-family: Unbounded,sans-serif;
+    }
+    .profile-img{
+        position: relative;
+        right:0;
+       top:0;
+        width:100%;
+        height:23rem;
+        border: none;
+    }
+    .profile-img img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        background-color:#DCDEDD ;
+        border-bottom-left-radius: 0;
+    }
+   
+}

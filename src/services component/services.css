@@ -1,0 +1,98 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    width:100%;
+    min-height: 100vh;
+}
+.services{
+    width:100%;
+    min-height: 100vh;
+    display:flex;
+    flex-direction:column;
+    position: relative;
+    gap:2rem;
+  
+}
+.services h1{
+    font-family: Unbounded,sans-serif;
+    font-weight: 400;
+    font-size:1.5rem ;
+
+}
+
+.service{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3.5rem;
+    margin-top: 3.5rem;
+    gap:1.3rem;
+  
+}
+.service p{
+    font-family: Kanit,sans-serif;
+    font-weight:300;
+  
+}
+.service-name{
+    display: flex;
+    gap:1.45rem;
+    flex:1;
+    
+ 
+}
+.service-name p{
+    font-family: Unbounded,sans-serif;
+    font-weight: 450;
+    font-size: 1.1rem;
+  
+}
+.service-description{
+    display: flex;
+    gap:1.25rem;
+    flex:1;
+  
+    flex-direction: column;
+ 
+}
+.service-description span li{
+    font-family: Kanit,sans-serif;
+    font-weight: 300;
+    color: var(--color4);
+}
+.service-description span li::before{
+    content: "--";
+    margin-right: 0.5rem;
+   
+}
+
+.service-icon{
+    width:2.5rem;
+    height:2.5rem;
+    color: var(--color4);
+}
+.serviceslist hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 2rem 0;
+  }
+@media(max-width: 768px) {
+    .service{
+        display: flex;
+        flex-direction:column ;
+        flex-wrap: wrap;
+        margin-bottom: 2.5rem;
+        margin-top: 2.5rem;
+    }
+    .service-icon{
+        width:2rem;
+        height:2rem;
+    }
+}
+  
+
+  

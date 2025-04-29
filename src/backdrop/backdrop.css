@@ -1,0 +1,62 @@
+.backdrop {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--backdrop);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  opacity: var(--backdrop-opacity);
+  transition: opacity 0.4s ease;
+  z-index: 10;
+  font-family: 'Kanit', sans-serif;
+  pointer-events: auto;
+}
+
+
+  
+  .backdrop-content {
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    width:100%;
+  }
+  
+  .backdrop-content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-family: Kanit, sans-serif;
+    font-weight: 400;
+    color: var(--color1);
+  }
+  
+  .backdrop-content p {
+    font-size: 1rem;
+  }
+  .backdrop-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .link-icon{
+    color:var(--color4)
+  }
+  .backdrop-links a {
+    cursor:pointer;
+    color: var(--color1);
+    font-weight: bold;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Kanit', sans-serif;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  

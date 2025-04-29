@@ -1,0 +1,63 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    width:100%;
+    min-height: 100vh;
+}
+.slider{
+    width:100%;
+    position:relative
+}
+.slide-content {
+  position: relative;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: grab;
+  --backdrop-opacity: 0;
+}
+  
+  .slide-one {
+    background-image: url(portfolio1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .slide-two {
+    background-image: url(portfolio3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .slide-three {
+    
+    background-image: url(portfolio3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  /* Optional: override Swiper buttons */
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: white;
+    display: none;
+  }
+  .swiper-pagination-bullet{
+    display: inline-block;
+  }
+  .swiper-pagination-bullet-active {
+    background:var(--color1);
+  }
+  

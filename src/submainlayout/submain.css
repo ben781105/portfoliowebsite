@@ -1,0 +1,46 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    width:100%;
+    min-height: 100vh;
+}
+.submain{
+    flex:0.66;
+    display:flex;
+    flex-direction: column;
+    margin-right: 34%;
+    width:66%;
+    gap:2rem;
+    min-height: 100vh;
+    padding-left: 8.55rem;
+    padding-right: 7rem;
+    padding-bottom: 3.5rem;
+    background-color:var(--color2);
+  
+}
+@media(max-width:1300px){
+    .submain{
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+       
+    }
+}
+@media(max-width: 980px) {
+    .submain{
+        flex:1;
+        display:flex;
+        flex-direction: column;
+        margin-right: 0;
+        width:100%;
+        gap:2rem;
+        min-height: 100vh;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        
+
+    }
+}
