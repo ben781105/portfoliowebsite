@@ -1,4 +1,4 @@
-// Backdrop.jsx
+
 import { motion as Motion } from 'framer-motion';
 import './backdrop.css';
 import {FaSquareArrowUpRight} from 'react-icons/fa6'

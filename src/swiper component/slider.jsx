@@ -6,9 +6,10 @@ import { AnimatePresence } from 'framer-motion';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
+import Backdrop from './backdrop';
 import './slider.css';
-import Backdrop from '../backdrop/Backdrop'; // <-- use the reusable component
+import './backdrop.css';
+
 
 const slides = [
   {
