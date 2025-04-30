@@ -12,21 +12,18 @@ const handleSubmit = async (e) => {
   const formData = new FormData(form);
 
   try {
-    const res = await axios.post("https://formsubmit.co/ajax/benardleno78@gmail.com",formData, {
+     await axios.post("https://formsubmit.co/ajax/benardleno78@gmail.com",formData, {
    
       headers: {
         Accept: "application/json",
       },
       
     });
-
-    if (res.ok) {
-      toast.success("Message sent successfully!");
+   toast.success("Message sent successfully!");
       form.reset();
-    } else {
-      toast.error("Something went wrong. Please try again.");
-    }
-  } catch {
+  
+  } catch(error){
+    console.error("Error sending message:", error);
     toast.error("Network error. Try again later.");
   }
 };
