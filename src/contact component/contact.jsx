@@ -1,5 +1,6 @@
 import React from 'react'
 import './contact.css'
+import axios from 'axios'
 import { toast } from 'react-toastify'
 import {motion as Motion} from 'framer-motion'
 function Contact() {
@@ -11,12 +12,12 @@ const handleSubmit = async (e) => {
   const formData = new FormData(form);
 
   try {
-    const res = await fetch("https://formsubmit.co/ajax/benardleno78@gmail.com", {
-      method: "POST",
+    const res = await axios.post("https://formsubmit.co/ajax/benardleno78@gmail.com",formData, {
+   
       headers: {
         Accept: "application/json",
       },
-      body: formData,
+      
     });
 
     if (res.ok) {
