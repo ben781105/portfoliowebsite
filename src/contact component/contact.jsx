@@ -1,7 +1,35 @@
 import React from 'react'
 import './contact.css'
+import { toast } from 'react-toastify'
 import {motion as Motion} from 'framer-motion'
 function Contact() {
+  
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  const form = e.target;
+ 
+  const formData = new FormData(form);
+
+  try {
+    const res = await fetch("https://formsubmit.co/ajax/benardleno78@gmail.com", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+      },
+      body: formData,
+    });
+
+    if (res.ok) {
+      toast.success("Message sent successfully!");
+      form.reset();
+    } else {
+      toast.error("Something went wrong. Please try again.");
+    }
+  } catch {
+    toast.error("Network error. Try again later.");
+  }
+};
+
   return (
     <div className='contact' id='contact'>
       <h1>Contact</h1>
@@ -21,30 +49,13 @@ function Contact() {
             <sub>+256 708 693 920</sub>
         </span>
       </div>
-      <form
-  action="https://formsubmit.co/benardleno78@gmail.com"
-  method="POST"
-  onSubmit={(e) => {
-    const form = e.target;
-    const nextInput = form.querySelector('input[name="_next"]');
-
-    // Dynamically set redirect URL based on host
-    if (window.location.hostname === "localhost") {
-      nextInput.value = "http://localhost:5173/thank-you";
-    } else {
-      nextInput.value = "https://portfoliowebsite-0agg.onrender.com/thank-you";
-    }
-  }}
->
+      <form onSubmit={handleSubmit}>
   <div className="inputs">
     <input type="text" name="name" placeholder="Your name" required />
     <input type="email" name="email" placeholder="Your email" required />
   </div>
 
   <textarea name="message" placeholder="Tell me about your project" required></textarea>
-
-  <input type="hidden" name="_captcha" value="false" />
-  <input type="hidden" name="_next" value="" />
 
   <Motion.button
     type="submit"
@@ -56,6 +67,7 @@ function Contact() {
 
   <sub>* Your details will be kept private and will not be shared.</sub>
 </form>
+
 
 
 
