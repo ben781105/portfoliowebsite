@@ -78,7 +78,7 @@ const handleSubmit = async (e) => {
     type="email"
      name="email" 
      placeholder="Your email" required 
-     value={formData.name}
+     value={formData.email}
      onChange={handleChange} 
      />
   </div>
@@ -86,7 +86,7 @@ const handleSubmit = async (e) => {
   <textarea
    name="message" 
    placeholder="Tell me about your project"
-   value={formData.name}
+   value={formData.message}
    onChange={handleChange}  
    required></textarea>
 
