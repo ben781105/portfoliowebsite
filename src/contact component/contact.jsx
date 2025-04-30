@@ -1,27 +1,45 @@
 import React from 'react'
 import './contact.css'
 import axios from 'axios'
+import { useState } from 'react'
 import { toast } from 'react-toastify'
 import {motion as Motion} from 'framer-motion'
 function Contact() {
-  
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,  
+      
+      [name]: value
+    }));
+  };
+
+
 const handleSubmit = async (e) => {
   e.preventDefault();
-  const form = e.target;
- 
-  const formData = new FormData(form);
 
   try {
-     await axios.post("https://formsubmit.co/ajax/benardleno78@gmail.com",formData, {
+    const response = await axios.post("https://formsubmit.co/ajax/benardleno78@gmail.com",formData, {
    
       headers: {
         Accept: "application/json",
       },
       
     });
+    if(response.status === 200){
    toast.success("Message sent successfully!");
-      form.reset();
-  
+   setFormData({ name: '', email: '', message: '' });
+    }
+    else {
+      toast.error("Something went wrong. Please try again.");
+    }
   } catch(error){
     console.error("Error sending message:", error);
     toast.error("Network error. Try again later.");
@@ -49,11 +67,28 @@ const handleSubmit = async (e) => {
       </div>
       <form onSubmit={handleSubmit}>
   <div className="inputs">
-    <input type="text" name="name" placeholder="Your name" required />
-    <input type="email" name="email" placeholder="Your email" required />
+    <input 
+    type="text" 
+    name="name"
+     placeholder="Your name"
+      required
+      value={formData.name}
+      onChange={handleChange} />
+    <input 
+    type="email"
+     name="email" 
+     placeholder="Your email" required 
+     value={formData.name}
+     onChange={handleChange} 
+     />
   </div>
 
-  <textarea name="message" placeholder="Tell me about your project" required></textarea>
+  <textarea
+   name="message" 
+   placeholder="Tell me about your project"
+   value={formData.name}
+   onChange={handleChange}  
+   required></textarea>
 
   <Motion.button
     type="submit"
