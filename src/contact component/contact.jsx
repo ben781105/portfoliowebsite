@@ -24,9 +24,11 @@ function Contact() {
 
 const handleSubmit = async (e) => {
   e.preventDefault();
-
+  const formUrl = window.location.hostname === "localhost" 
+  ? "https://formsubmit.co/ajax/benardleno78@gmail.com" 
+  : "https://formsubmit.co/ajax/benardleno78@gmail.com";
   try {
-    const response = await axios.post("https://formsubmit.co/ajax/benardleno78@gmail.com",formData, {
+    const response = await axios.post(formUrl,formData, {
    
       headers: {
         Accept: "application/json",
