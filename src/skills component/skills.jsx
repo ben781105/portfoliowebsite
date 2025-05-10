@@ -11,9 +11,10 @@ import react from '../assets/react.svg'
 import git from '../assets/git.svg'
 import github from '../assets/github.svg'
 import python from '../assets/python.svg'
+import tailwind from '../assets/tailwindcss-icon.svg'
 
 function Skills() {
-  const logos = [html, css, js, react, git, github, python, django, mySQL]
+  const logos = [html, css, tailwind,js, react, git, github, python, django, mySQL]
 
   return (
     <div className='skills' id='skills'>
