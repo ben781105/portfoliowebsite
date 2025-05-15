@@ -33,7 +33,7 @@ function Contact() {
         <p>lets get in touch and build something together, i would <span style={{color: '#e2f87b'}}>love</span> to hear from you</p>
       </FadeInWhenVisible>
       <hr />
-      <FadeInWhenVisible variant='scaleUp' delay={0.7}>
+      <FadeInWhenVisible variant='scaleUp' delay={0.5}>
         <form ref={form} onSubmit={handleSubmit}>
         <div className="inputs">
           <input type="text" name="name" placeholder="Your name" required />

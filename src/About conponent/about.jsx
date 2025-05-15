@@ -23,7 +23,7 @@ function About() {
           </div>
         </FadeInWhenVisible>
 
-        <FadeInWhenVisible variant="scaleUp" delay={0.5} className="about-info">
+        <FadeInWhenVisible variant="scaleUp" delay={0.4} className="about-info">
           <div className="about-info">
             <span>
               <h4>Email</h4>
