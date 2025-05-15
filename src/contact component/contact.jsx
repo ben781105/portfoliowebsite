@@ -3,6 +3,7 @@ import './contact.css';
 import { toast } from 'react-toastify';
 import emailjs from '@emailjs/browser';
 import { motion as Motion } from 'framer-motion';
+import FadeInWhenVisible from '../Motion';
 
 function Contact() {
   const form = useRef();
@@ -27,10 +28,13 @@ function Contact() {
 
   return (
     <div className='contact' id='contact'>
-      <h1>Contact</h1>
-      <p>lets get in touch and build something together, i would <span style={{color: '#e2f87b'}}>love</span> to hear from you</p>
+      <FadeInWhenVisible><h1>Contact</h1></FadeInWhenVisible>
+      <FadeInWhenVisible delay={0.2}>
+        <p>lets get in touch and build something together, i would <span style={{color: '#e2f87b'}}>love</span> to hear from you</p>
+      </FadeInWhenVisible>
       <hr />
-      <form ref={form} onSubmit={handleSubmit}>
+      <FadeInWhenVisible variant='scaleUp' delay={0.7}>
+        <form ref={form} onSubmit={handleSubmit}>
         <div className="inputs">
           <input type="text" name="name" placeholder="Your name" required />
           <input type="email" name="email" placeholder="Your email" required />
@@ -45,6 +49,7 @@ function Contact() {
         </Motion.button>
         <sub>* Your details will be kept private and will not be shared.</sub>
       </form>
+      </FadeInWhenVisible>
     </div>
   );
 }

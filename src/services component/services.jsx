@@ -1,4 +1,5 @@
 import './services.css';
+import FadeInWhenVisible from '../Motion';
 import { FaPenNib, FaPagelines, FaCode, FaBlog } from 'react-icons/fa';
 function Services() {
   const servicesData = [
@@ -31,16 +32,19 @@ function Services() {
   return (
     <div className='services' id='services'>
     
-        <h1>Services</h1>
+        <FadeInWhenVisible><h1>Services</h1></FadeInWhenVisible>
   
-  <p className='service-intro'>
+  <FadeInWhenVisible delay={0.2}>
+    <p className='service-intro'>
     From crafting visually captivating designs to developing seamless and responsive websites, I ensure a holistic digital presence.
   </p>
+  </FadeInWhenVisible>
 
 
 <div className='serviceslist'>
   {servicesData.map((service, index) => (
-    <div className='service' key={index}>
+    <FadeInWhenVisible>
+      <div className='service' key={index}>
         <div className='service-name'>
           {service.icon}
           <p>{service.title}</p>
@@ -59,6 +63,7 @@ function Services() {
 
       {index !== servicesData.length - 1 && <hr />}
     </div>
+    </FadeInWhenVisible>
   ))}
 </div>
 
