@@ -1,31 +1,38 @@
 import './services.css';
 import FadeInWhenVisible from '../Motion';
 import { FaPenNib, FaPagelines, FaCode, FaBlog } from 'react-icons/fa';
+import { FaPalette } from 'react-icons/fa6';
 function Services() {
   const servicesData = [
     {
       icon: <FaPenNib className='service-icon' />,
       title: "Web development",
       description: "As a freelancer developer, I translate design concepts into functional and responsive websites that go beyond aesthetics.",
-      tech: ["HTML, CSS and Javascript", "React", "Django"],
+      tech: ["HTML, CSS and Javascript", "React and Redux", "Django","tailwind"],
+    },
+    {
+      icon:<FaPalette className='service-icon'/>,
+      title: "Figma to Code",
+      description: "I convert Figma designs into clean and efficient, responsive websites using modern frontend tools like React and Tailwind.",
+      tech: ["HTML, CSS and Javascript", "React", "tailwind"],
     },
     {
       icon: <FaPagelines className='service-icon' />,
       title: "Landing Page",
-      description: "Crafting engaging landing pages that captivate users and drive conversions.",
-      tech: ["HTML, CSS and Javascript", "React"],
+      description: " I Craft engaging, mobile-firstlanding pages that captivate users and drive conversions.",
+      tech: ["HTML, CSS and Javascript", "React","tailwind"],
     },
     {
       icon: <FaCode className='service-icon' />,
-      title: "Frontend Development",
-      description: "I do anything related to frontend, from debugging, styling and optimizing to creating responsive and user-friendly interfaces.",
-      tech: ["HTML, CSS and Javascript", "Responsive", "React"],
+      title: "Frontend Engineering",
+      description: "UI implementation , debugging and performance optimization, I focus on building interactive, accessible, and responsive user interfaces",
+      tech: ["HTML, CSS and Javascript", "tailwind", "React","Django"],
     },
     {
       icon: <FaBlog className='service-icon' />,
-      title: "Blog development",
-      description: "I create dynamic and engaging blog websites that engage visitors and provide valuable content.",
-      tech: ["React", "Django", "MySQL"],
+      title: "Website Redesign",
+      description: "I modernize outdated websites by improving layout, usability, and responsiveness using the latest web technologies.",
+      tech: ["React", "Django", "Tailwind","Javascript"],
     },
   ];
 

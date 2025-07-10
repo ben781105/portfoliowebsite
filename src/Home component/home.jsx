@@ -1,7 +1,7 @@
 import React from 'react'
 import {motion as Motion} from 'framer-motion'
 import './home.css'
-import profile from '../assets/picture.jpg'
+import profile from '../assets/ben.jpg'
 function Home() {
   return (
     <div className='home' id='home'>

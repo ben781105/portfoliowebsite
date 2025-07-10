@@ -12,9 +12,10 @@ import git from '../assets/git.svg'
 import github from '../assets/github.svg'
 import python from '../assets/python.svg'
 import tailwind from '../assets/tailwindcss-icon.svg'
+import redux from '../assets/redux.svg'
 
 function Skills() {
-  const logos = [html, css, tailwind,js, react, git, github, python, django, mySQL]
+  const logos = [html, css, tailwind,js, react, git, github, python, django, mySQL,redux]
 
   return (
     <div className='skills' id='skills'>

@@ -14,5 +14,15 @@ body,html{
     display:flex;
     flex-direction:column;
     position: relative;
-    gap:2rem;
+}
+.tap{
+    color:var(--color5);
+    margin-top: 1.5rem;
+    display: none;
+    
+}
+@media(max-width:968px){
+    .tap{
+       display:block ;
+    }
 }

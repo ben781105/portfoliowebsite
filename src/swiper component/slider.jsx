@@ -21,18 +21,33 @@ const slides = [
   },
   {
     id: 2,
-    title: 'Portfolio Project 2',
+    title: 'Blaze-nest Project',
     class: 'slide-two',
-    github: 'https://github.com/your-user/project2',
-    live: 'https://your-live-site.com/project2'
+    github: 'https://github.com/ben781105/blaze-nest',
+    live: 'https://blaze-nest.vercel.app'
   },
   {
     id: 3,
-    title: 'Portfolio Project 3',
+    title: 'Teo Cakes (backend)',
     class: 'slide-three',
-    github: 'https://github.com/your-user/project3',
-    live: 'https://your-live-site.com/project3'
+    github: 'https://github.com/ben781105/TEO',
+    live: 'https://cakeshop-wi4m.onrender.com'
   },
+   {
+    id: 4,
+    title: 'Bulk Sms Website (Frontend)',
+    class: 'slide-four',
+    github: 'https://github.com/ben781105/startfront',
+    live: 'https://github.com/ben781105/startfront'
+  },
+   {
+    id: 5,
+    title: 'Bulk Sms Website (Backend)',
+    class: 'slide-four',
+    github: 'https://github.com/ben781105/startback',
+    live: 'https://github.com/ben781105/startback'
+  },
+
 ];
 
 
