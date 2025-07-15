@@ -19,7 +19,7 @@ function Services() {
     {
       icon: <FaPagelines className='service-icon' />,
       title: "Landing Page",
-      description: " I Craft engaging, mobile-firstlanding pages that captivate users and drive conversions.",
+      description: " I Craft engaging, mobile-first landing pages that captivate users and drive conversions.",
       tech: ["HTML, CSS and Javascript", "React","tailwind"],
     },
     {
