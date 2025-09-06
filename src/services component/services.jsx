@@ -12,8 +12,8 @@ function Services() {
     },
     {
       icon:<FaPalette className='service-icon'/>,
-      title: "Figma to Code",
-      description: "I convert Figma designs into clean and efficient, responsive websites using modern frontend tools like React and Tailwind.",
+      title: "UI/UX designs to Code",
+      description: "I convert  UI/UX designs into clean and efficient, responsive websites using modern frontend tools like React and Tailwind.",
       tech: ["HTML, CSS and Javascript", "React", "tailwind"],
     },
     {

@@ -38,14 +38,14 @@ const slides = [
     title: 'Bulk Sms Website (Frontend)',
     class: 'slide-four',
     github: 'https://github.com/ben781105/startfront',
-    live: 'https://startfront.vercel.app'
+    live: 'https://send-it-znjy.onrender.com'
   },
    {
     id: 5,
     title: 'Bulk Sms Website (Backend)',
     class: 'slide-four',
     github: 'https://github.com/ben781105/startback',
-    live: 'https://startfront.vercel.app'
+    live: 'https://send-it-znjy.onrender.com'
   },
 
 ];

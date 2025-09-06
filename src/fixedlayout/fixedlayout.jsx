@@ -1,6 +1,6 @@
 import React, { useState,useEffect} from 'react';
 import './fixedlayout.css';
-import { FaXTwitter, FaGithub, FaTiktok, FaFacebook, FaBars, FaXmark } from 'react-icons/fa6';
+import { FaXTwitter, FaGithub, FaUpwork, FaLinkedin, FaBars, FaXmark } from 'react-icons/fa6';
 
 function Fixedlayout() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,8 +37,8 @@ function Fixedlayout() {
         <div className='fixedlayout'>
           <ul className='socialmedia'>
             <li><a href='https://github.com/ben781105'><FaGithub className='media-icon' /></a></li>
-            <li><a href='https://www.tiktok.com/@centered_div'><FaTiktok className='media-icon' /></a></li>
-            <li><a href='https://www.facebook.com/profile.php?id=100085612663352&mibextid=ZbWKwL'><FaFacebook className='media-icon' /></a></li>
+            <li><a href='https://www.upwork.com/freelancers/~015dd6ce3dbc6c2144'><FaUpwork style={{fontSize:'25px'}} className='media-icon' /></a></li>
+            <li><a href='https://www.linkedin.com/in/ssewabuga-benard-b9406136b'><FaLinkedin className='media-icon' /></a></li>
             <li><a href='https://x.com/ben41d'><FaXTwitter className='media-icon' /></a></li>
           </ul>
 

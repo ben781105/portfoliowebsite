@@ -10,9 +10,8 @@ function Home() {
         <div className='greetings'>
             <h2>HELLO I'AM</h2>
             <span>BENARD</span>
-            <p>I believe that collaboration and creativity 
-                are the cornerstones of progress, and I am dedicated to bringing
-                 a fresh perspective to every project I undertake.</p>
+            <p>Are you looking for a skilled frontend developer who can transform your UI/UX designs
+               into fully functional, pixel perfect code, integrate backend API's?  Welcome to my Portfolio.</p>
             <Motion.button
              whileHover={{ scale: 1.03 }}
              whileTap={{ scale: 0.95 }}

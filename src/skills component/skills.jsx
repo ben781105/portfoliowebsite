@@ -13,9 +13,26 @@ import github from '../assets/github.svg'
 import python from '../assets/python.svg'
 import tailwind from '../assets/tailwindcss-icon.svg'
 import redux from '../assets/redux.svg'
+import typescript from '../assets/typescript.svg'
+import postgres from '../assets/postgresql.svg'
 
 function Skills() {
-  const logos = [html, css, tailwind,js, react, git, github, python, django, mySQL,redux]
+  const logos = [
+  { src: html, name: "HTML" },
+  { src: css, name: "CSS" },
+  { src: tailwind, name: "Tailwind CSS" },
+  { src: js, name: "JavaScript" },
+  { src: typescript, name: "TypeScript" },
+  { src: react, name: "React" },
+  { src: git, name: "Git" },
+  { src: github, name: "GitHub" },
+  { src: python, name: "Python" },
+  { src: django, name: "Django" },
+  { src: mySQL, name: "MySQL" },
+  { src: redux, name: "Redux" },
+  { src: postgres, name: "PostgreSQL" }
+];
+
 
   return (
     <div className='skills' id='skills'>
@@ -32,10 +49,14 @@ function Skills() {
             ease: 'linear' 
           }}
         >
-          {/* Duplicate for seamless loop */}
+          
           {[...logos, ...logos].map((logo, index) => (
-            <span key={index} className='skill-logo'>
-              <img src={logo} alt={`tech-logo-${index}`} className='skills-icon' />
+            <span key={index} className='skill-logo group relative'>
+              <img src={logo.src} alt={logo.name} className='skills-icon' />
+
+              <span className='tooltip'>
+                {logo.name}
+              </span>
             </span>
           ))}
         </Motion.div>
